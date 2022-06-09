@@ -1,0 +1,151 @@
+/* FontAwesome CDN 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* ######################## Container ################# */
+#container {
+  width: 1200px;
+  margin: auto;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+#container h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 80px
+}
+
+.login-header {
+  position: relative;
+  border-top: 1px solid #000;
+  background:#f8f8f8 url(../images/header-icon.png) no-repeat 10%;
+}
+.login-info {
+  margin-left:300px;
+  padding: 40px 0;
+}
+.login-info ul li {
+  list-style:disc;
+  line-height: 1.7;
+}
+
+.blue {
+  color: #0062b1;
+}
+
+.login-form {
+  width: 50%;
+  border: 1px solid #ccc;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  margin-top: 40px;
+}
+.list-box {
+  margin-top: 40px;
+  overflow: hidden;
+}
+.list-box li {
+  float: left;
+  width:calc(25% - 10px);
+  margin-right: 13.3px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background: #f8f8f8;
+  color: #6e6c6c;
+  font-weight: bold;
+  border-radius: 3px;
+}
+.list-box li:first-child {
+  background: #0d79c2;
+  border: 1px solid #0d79c2;
+  color: white;
+  font-weight: bold;
+}
+.list-box li:last-child {
+  margin-right: 0;
+}
+.list-box::after {
+  content: '';
+  display: block;
+  clear:both
+}
+.first-box {
+  height: auto;
+  margin-top: 40px;
+  /* border: 1px solid #000; */
+  margin-bottom: 100px;
+}
+.first-box .inner {
+  height: 100%;
+}
+.first-box {
+  content: '';
+  display: block;
+  clear:both
+}
+.first-box .inner textarea {
+  width: 100%;
+  height: 500px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding:40px;
+  overflow: scroll;
+}
+.sub-tit {
+  font-size: 30px;
+  padding-left: 20px;
+}
+.cblue {
+  color: #0d79c2;
+}
+.radiobox {
+  float: right;
+}
+label[for="chk1"],label[for="chk2"] {
+  padding-left:5px;
+}
+.first-box.three textarea{
+  height: 300px;
+}
+.secondbox {
+  margin-bottom: 50px;
+}
+.secondbox .inner{
+  height: 90px;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #ddd;
+}
+.secondbox p {
+  line-height: 1.5em;
+}
+
+.btn-box{
+  width:400px;
+  margin: auto;
+}
+a.btn {
+  display: inline-block;
+  width: 195px;
+  height: 80px;
+  line-height: 80px;
+  background:#717171;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+a.btn:last-child {
+  background: #0d79c2;
+}
+.first-box p, .secondbox p {
+  font-weight: 400;
+  color: rgb(112, 111, 111);
+}

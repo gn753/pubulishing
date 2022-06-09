@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자주 묻는 질문</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        /* FontAwesome CDN 4.7 */
+        @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: normal;
+        }
+
+        .container {}
+
+        .heading {
+            margin-bottom: 50px;
+        }
+
+        .heading h1 {
+            text-align: center;
+        }
+
+        .heading h1 span {
+            display: block;
+            margin-bottom: 25px;
+        }
+
+        hr.bar {
+            width: 400px;
+            border: 2px solid #8d00af;
+        }
+
+        .accordion {
+            width: 800px;
+            box-sizing: border-box;
+        }
+
+        .title {
+            border-top: 2px solid rgba(221, 221, 221, 0.815);
+            padding: 15px 25px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .title::after {
+            content: '\f105';
+            font-family: fontawesome;
+            color: rgba(221, 221, 221, 0.815);
+            ;
+            float: right;
+            font-size: 20px;
+        }
+
+        .title.active::after {
+            transform: rotate(90deg);
+        }
+
+        .title.active {
+            display: block;
+        }
+
+        .title:hover,
+        .title.active {
+            background-color: #8d00af;
+            color: rgb(243, 239, 239);
+            border-top: 2px solid transparent;
+        }
+
+        .title.bor-color {
+            border-bottom: 2px solid rgba(221, 221, 221, 0.815);
+        }
+
+        .desc {
+            padding: 30px 40px;
+            background-color: rgba(221, 221, 221, 0.815);
+            line-height: 1.5em;
+            display: none;
+        }
+
+        .desc.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>
+                <span><img src="images/nav-logo.png" alt=""></span>
+                자주 묻는 질문</h1>
+            <hr class="bar">
+        </div>
+        <div class="accordion">
+            <div class="title active">Q. 시급은 어떻게 책정하나요?</div>
+            <div class="desc active">
+                <p>
+                    A. 돌봄 선생님의 최소 시급은 11,000원부터 시작합니다.
+                    공고를 올릴 때 적정 돌봄 비용에 대한 안내가 있으므로 이에 따라 책정해 주세요
+                </p>
+                <p>
+                    하지만 돌봄 선생님들의 경력과 능력이나 쌍둥이, 가사와 돌봄 병행, 등
+                    요청해 주신 업무내용에 따라서 시급은 변동될 수 있습니다.
+                </p>
+            </div>
+            <div class="title">Q. 결제는 어떻게 해야 하나요?</div>
+            <div class="desc">
+                <p>
+                    A. 결제는 모두 카드로 이루어지고 있으며 선결제입니다.
+                    연장 계약을 하시는 경우, 재결제를 미리 부탁드립니다.
+                </p>
+                <p>
+                    부모님의 카드 정보를 등록해 주시면 결제가 가능하며
+                    2차 비밀번호 설정을 통해서 안전한 결재 환경을 제공합니다.
+                    카드 결제 대행사인 나이스페이먼츠에서 카드 정보를 관리합니다.
+                </p>
+            </div>
+            <div class="title">Q. 계약서 전문이 보이지 않아요.</div>
+            <div class="desc">
+                <p>
+                    A. 계약서를 쓰는 마지막 단계에서 계약서 옆쪽 ‘크게 보기’ 를 눌러주시면
+                    계약서 전문 확인이 가능합니다.
+                </p>
+            </div>
+            <div class="title">Q. 최소 이용 시간 기준이 있나요?</div>
+            <div class="desc">
+                A. 최소 이용 시간 단위는 3시간입니다.
+                1달 기준으로 3시간 * 22일 * 시급 11,000원 = 약 660,000원
+                한 달 근무일수, 근무시간, 시급 등에 따라서 월지급액은 변동이 있을 수 있습니다.
+            </div>
+            <div class="title">Q. 환불 가능 기간과 내용이 궁금합니다.
+            </div>
+            <div class="desc">
+                <p>
+                    A.
+                    <취소수수료>
+                        하루, 긴급 - 부모 취소 시
+                        *돌봄시작 3일전 100% 환불
+                        *돌봄시작 2일전 70% 환불
+                        *돌봄시작 1일전 50% 환불
+                        *돌봄당일 환불 불가
+                </p>
+                <p>
+                    단기,정기,입주-부모 취소 시
+                    *돌봄시작 일주일 전 100% 환불
+                    *돌봄시작 4~6일 전 80% 환불
+                    *돌봄시작 2~3일 전 70% 환불
+                    *돌봄시작 1일 전 60% 환불
+                    *돌봄 당일 50% 환불
+                </p>
+                <p>
+                    <돌봄진행 중 남은 기간(시간) 취소>
+                        하루,긴급-부모 취소 시
+                        *남은 시간 환불 불가
+
+                        단기,정기,입주-부모 취소시
+                        *남은 기간에 70% 환불
+                </p>
+            </div>
+            <div class="title bor-color">Q. 계약서 전문이 보이지 않아요.</div>
+            <div class="desc">
+                <p>
+                    A. 계약서를 쓰는 마지막 단계에서 계약서 옆쪽 ‘크게 보기’ 를 눌러주시면
+                    계약서 전문 확인이 가능합니다.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.title').click(function () {
+            $(this).toggleClass('active')
+            $(this).siblings('.title').removeClass('active')
+            $(this).siblings('.desc').stop().slideUp()
+            $(this).next('.desc').stop().slideToggle()
+        })
+    </script>
+</body>
+
+</html>

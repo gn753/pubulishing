@@ -1,0 +1,167 @@
+.brand-sub-page {
+  max-width: 1260px;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  background: #fff;
+  color: #000;
+  box-sizing: content-box;
+}
+
+.brand-sub-page .brand__header {
+  position: relative;
+  margin: 0 0 30px 0;
+  padding: 65px 0 32px;
+  text-align: center;
+  border-bottom: 1px solid #efefef;
+}
+
+.brand-sub-page .brand__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.brand-sub-page .brand__body {
+  padding-top: 30px;
+}
+/* brand-sup-page common end  */
+/* brand-about-page */
+.brand-sub-page .about__visual__figure {
+  max-width: 100%;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+}
+
+.brand-sub-page .about__text {
+  color: #000;
+  padding: 30px 0;
+}
+
+.brand-sub-page .about__text p:nth-child(1) {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+.brand-sub-page .about__text p:nth-child(2) {
+  font-size: 21px;
+  line-height: 30px;
+}
+.brand-sub-page .about__text p:nth-child(3) {
+  font-size: 14px;
+  font-weight: bold;
+}
+.brand-sub-page .about__video {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin: 5%;
+}
+.brand-sub-page .about__video .about__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.brand-sub-page .brand__footer__logo {
+  width: 100%;
+  height: 15vw;
+  background: url(https://lifework2018.speedgabia.com/renewal/logo2.jpg);
+  background-size: 35vw;
+  background-position: center 2vw;
+  background-repeat: no-repeat;
+}
+.brand-sub-page .brand__footer__nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+}
+.brand-sub-page .brand__footer__nav li {
+  width: 33.333%;
+  text-align: center;
+  padding: 14px 0 10px;
+  font-weight: 500;
+}
+.brand-sub-page .brand__footer__nav li a {
+  font-size: 15px;
+}
+
+
+
+/* about 반응형  */
+@media (min-width:320px) {
+  .brand-sub-page {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+  }
+  .brand-sub-page .brand__header {
+    padding: 35px 0 20px;
+  }
+  .brand-sub-page .about__text p:nth-child(1) {
+    font-size: 3.5vw;
+    line-height: 5vw;
+    font-weight: bold;
+  }
+  .brand-sub-page .about__text p:nth-child(2) {
+    font-size: 3.5vw;
+    line-height: 4.5vw;
+  }
+  .brand-sub-page .about__video {
+    margin: 0;
+  }
+  .brand-sub-page .brand__footer__logo {
+    background-size: 80vw;
+    background-position: center 4vw;
+    height: 35vw;
+  }
+}
+@media (min-width:767px) {
+  .brand-sub-page .about__text p:nth-child(1) {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+  }
+  
+  .brand-sub-page .about__text p:nth-child(2) {
+    font-size: 21px;
+    line-height: 30px;
+  }
+  .brand-sub-page .brand__footer__logo {
+    width: 100%;
+    height: 15vw;
+    background: url(https://lifework2018.speedgabia.com/renewal/logo2.jpg);
+    background-size: 35vw;
+    background-position: center 2vw;
+    background-repeat: no-repeat;
+  }
+  
+} 
+@media (min-width:1024px) {
+  .brand-sub-page {
+    max-width: 1260px;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #fff;
+    color: #000;
+    box-sizing: content-box;
+  }
+  .brand-sub-page .brand__header {
+    margin: 0 0 30px 0;
+    padding: 65px 0 32px;
+  }
+  .brand-sub-page .about__video {
+    margin: 5%;
+  }
+}

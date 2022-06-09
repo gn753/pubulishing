@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>모바일 웹 제작노트</title>
+  <!-- CDN Jquery  -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- wow.js -->
+  <script src="../plugin/wow/wow.min.js"></script>
+  <!-- xeicon -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!-- UIkit CSS -->
+  <!-- UIkit JS -->
+  <script src="../plugin/uikit/uikit.min.js"></script>
+  <link rel="stylesheet" href="../plugin/uikit/uikit.min.css" />
+  <link rel="stylesheet" href="../css/mobile-guide.css">
+  <style>
+    body {
+      padding-top: 70px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <a href="javascript:history.back()" class="btn"><i class="xi-long-arrow-left"></i>back</a>
+        <div class="linkbtn" data-uk-lightbox="animation: fade">
+          <a href="mobile-portfolio-02.html" data-type="iframe">Single View<i class="xi-angle-right-thin"></i></a>
+          <a class="multi" href="mobile-portfolio-01.html" data-type="iframe">multi View<i
+              class="xi-angle-right-thin"></i></a>
+        </div>
+      </nav>
+    </header>
+    <section class="content1">
+      <div class="content-inner">
+        <div class="info">
+          <h1>MOBILE WEB APP PORTFOLIO</h1>
+          <p>
+            웹소설 플랫폼 소설 네트워크에 모바일 웹앱을 제작 해 사용자의 편의성과 레이아웃을 중점으로 레이아웃을 제작했습니다
+          </p>
+        </div>
+        <div class="photo">
+          <img src="../images/mobile-mockup-01.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="content2">
+      <div class="content-inner wow">
+        <div class="photo">
+          <img src="../images/mobile-mockup-02.png">
+        </div>
+        <div class="info">
+          <h2>LOGIN</h2>
+          <p>
+            로그인은 그 브랜드의 고유 대표색상을 사용하여 좀 더 사용자가 직관적으로 알 수 있게 사용하였습니다
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="content3">
+      <div class="content-inner wow">
+        <div class="info">
+          <h2>MENU
+          </h2>
+          <p>
+            사용자가 정보를 좀 더 직관적으로 전달하기 위해 메뉴를 간략하게 구성하였고 이중터치가 되지 않도록 알맞는 크기로 메뉴의 사이즈를 구성하였습니다.
+          </p>
+        </div>
+        <div class="photo">
+          <img src="../images/mobile-mockup-05.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="content4">
+      <div class="content-inner wow">
+        <div class="photo">
+          <img src="../images/mobile-mockup-06.png" alt="">
+        </div>
+        <div class="info">
+          <h2>BEST</h2>
+          <p>
+            소설네트워크의 대표인 장르별 베스트입니다. 각 장르별 베스트를 볼 수 있도록 <b>data 속성</b> 을 사용해 탭메뉴를 구현했으며 사용자의 점수는 몇점인지 얼마의 유저가 리뷰를 달았는지 좀
+            더 직관적으로 보일 수 있도록 제작했습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="content5">
+      <div class="content-inner wow">
+        <div class="info">
+          <h2>SEARCH</h2>
+          <p>
+            모바일 사용자에 적합하게 검색페이지를 제작해 적절한 크기로 배치하였습니다.
+          </p>
+        </div>
+        <div class="photo">
+          <img src="../images/mobile-mockup-03.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="content6">
+      <div class="content-inner wow">
+        <div class="photo">
+          <img src="../images/mobile-mockup-04.png" alt="">
+        </div>
+        <div class="info">
+          <h2>COMMUNITY</h2>
+          <p>
+            사용자들이 자유롭게 웹소설에 대해 이야기를 나눌 수 있는 공간입니다. 소설네트워크의 주색상인 <b class="blue">#23D2E2</b>를 글쓰기 버튼에 배치해 모바일 웹 요소의 컨텐츠를
+            사용자가 좀 더 직관적으로 알 수 있도록 하였습니다
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    wow = new WOW({
+      boxClass: 'wow', // default
+      animateClass: 'animated', // default
+      offset: 500, // default
+      mobile: true, // default
+      live: true // default
+    })
+    wow.init();
+  </script>
+</body>
+
+</html>

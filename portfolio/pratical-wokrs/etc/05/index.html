@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>탭 메뉴 콘텐츠 제이쿼리</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="testimonial-section">
+    <h1><span>전민희</span> 룬의 아이들 시리즈</h1>
+    <div class="testimonial-pic">
+      <img class="active" src="images/run-01.jfif"  data-alt="tab1">
+      <img src="images/run-02.jfif" data-alt="tab2">
+      <img src="images/run-03.jpg" data-alt="tab3">
+    </div>
+    <div class="testimonial">
+      <div class="content active" id="tab1">
+        <p>
+          소년검사 보리스 진네만의 이야기. 삼촌에게 가문이 멸망당한 보리스는 가문의 검 '윈터러'를 소지해 여행을 떠난다. 하지만 그 검이 또 다른 위기의 원인이 되어, 사람들이 윈터러를 노릴 때마다 보리스의 마음은 겨울처럼 차갑고 삭막해져 간다. 여행의 끝에는 무엇이 기다릴지, 또 '윈터러'에는 어떤 비밀을 가질지... 살아남기 위한, 가문의 검을 지키기 위한 보리스의 여행이 시작된다.
+        </p>
+        <p>룬의 아이들, 원터러</p>
+      </div>
+      <div class="content" id="tab2">
+        <p>
+          《룬의 아이들: 데모닉》은 전민희의 룬의 아이들 시리즈 중 2부에 해당하는 판타지 소설이다. '데모닉'이라고 불리는 조슈아 폰 아르님을 주인공으로 하여, 조슈아가 가문의 계승에 관련된 음모에 휘말려 친구 막시민 리프크네, 리체 아브릴 등과 함께 모험을 하는 내용이다.
+        </p>
+        <p>룬의 아이들, 데모닉</p>
+      </div>
+      <div class="content" id="tab3">
+        <p>
+          작가 전민희의 판타지 소설 룬의 아이들 시리즈의 세 번째 작품. 오를란느 대공국의 공녀 이스핀 샤를의 이야기를 다룬다. 부제인 'Blooded'는 '순수 혈통의, 기질을 타고난'을 뜻한다.
+          사랑하는 오빠 베르나르를 지키기 위해 엘리트 근위대 '에투알'에 투신한 오를란느 공녀 샤를로트. 하지만 베르나르가 갑자기 실종되면서 혼란에 빠지고 만다.
+
+          임무를 위해 파견된 '사과의 섬'에서 베르나르의 흔적을 발견한 샤를로트는 대공과 독대하여 공국의 계승자 책봉까지 유예한 채 그 흔적을 쫓기 시작하는데……
+        </p>
+        <p>룬의 아이들, 블러디드</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.testimonial-pic img').click(function(){
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+
+      $('.testimonial .content').removeClass('active')
+      $('#' + $(this).attr('data-alt')).addClass('active')
+
+      // tab1  ==  $(this).attr('data-alt')
+    })
+  </script>
+  
+</body>
+</html>

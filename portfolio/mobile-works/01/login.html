@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인</title>
+  <!-- fontawesome 4.7 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- xeicon -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!-- CDN jquery 3.21  -->
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- CDN Slick CSS & JS -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Custom css -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/login.css">
+  <script src="custom.js"></script>
+</head>
+
+<body>
+  <main class="main">
+    <section class="login-inner">
+      <div class="login-heading">
+        <h2><a href="main.html"><img src="images/logo.png" alt=""></a></h2>
+      </div>
+      <div class="login-content">
+        <div class="login-input">
+          <input type="text" placeholder="메일 아이디, 이메일 전화번호">
+          <input type="password" placeholder="비밀번호">
+        </div>
+        <div class="login-check">
+          <input type="checkbox" id="chek">
+          <label for="chek"><em></em>로그인 상태 유지</label>
+        </div>
+        <div class="login-btn">
+          <button>로그인</button>
+          <button>카카오 로그인</button>
+          <button>네이버 로그인</button>
+          <button><i class="fa fa-qrcode"></i> QR코드 로그인</button>
+        </div>
+        <div class="login-etc">
+          <a href="#none">회원가입</a><a href="#none">비밀번호 찾기</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    $('.header-include').load('header.html', function () {
+      $('.trigger').click(function () {
+        $('.gnb').toggleClass('active')
+      })
+    })
+    $('.footer-include').load('footer.html')
+  </script>
+</body>
+
+</html>

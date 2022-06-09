@@ -1,0 +1,117 @@
+/* FontAwesome CDN 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* 각 메뉴 클릭시 배경유지 */
+#gheader>ul>li:nth-child(2) {
+  background-color: #006EBE
+}
+ /* ######################## Container ################# */
+#container {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.selected-page{
+  float:left;
+  width: 180px;
+  height: 40px;
+  margin-right: 2px;
+  line-height: 40px;
+  padding-left: 20px;
+  font-size: 14px;
+  border-right: 1px solid rgb(239, 239, 239);
+}
+.select-list {
+  float:left
+}
+.select-list select[name=list] {
+  height: 40px;
+  width: 200px;
+  border: none;
+  border-right: 1px solid rgb(239, 239, 239);
+}
+.subwrap {
+  height: 44px;
+  width: 100%;
+  border: 1px solid rgb(239, 239, 239);
+  box-sizing: border-box;
+}
+
+.subwrap .inner {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.homebox {
+  width: 50px;
+  height: 40px;
+  float: left;
+  border-left: 1px solid rgb(239, 239, 239);
+  border-right: 1px solid rgb(239, 239, 239);
+  box-sizing: border-box;
+}
+
+.homebox li {
+  text-align: center;
+  height: 40px;
+}
+
+.homebox li img {
+  height: 16px;
+}
+
+.homebox li a {
+  display: block;
+  line-height: 40px;
+}
+
+.subtit {
+  height: 200px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.subtit h1 {
+  text-align: center;
+  line-height: 200px;
+}
+
+.subtit-text {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.subtit-text h2 {
+  margin-bottom: 50px;
+}
+.sub-img {
+  margin-bottom: 20px;
+}
+.sub-img img {
+  width: 1200px;
+  height: 223px;
+}
+.sub-text {
+  color: #6c6d73;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+.btn {
+  background:#0a75e3;
+  padding: 10px 0px;
+  display: block;
+  width:200px;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  transition:0.5s;
+  cursor: pointer;
+}
+.subtit-text .btn:focus{
+  border: 1px solid red;
+}

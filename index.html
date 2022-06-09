@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프론트엔드 고지훈의 퍼블리싱 포트폴리오</title>
+  <!-- CDN Jquery  -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Wow js -->
+  <script src="/plugin/wow/wow.min.js"></script>
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="plugin/uikit/uikit.min.css" />
+  <!-- UIkit JS -->
+  <script src="plugin/uikit/uikit.min.js"></script>
+  <!-- xeicon -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!-- Custom CSS &js -->
+  <script src="custom.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- 모바일 네비게이션 바깥 클릭 시 네비게이션 닫힘 -->
+    <div class="overlay"></div>
+    <header id="header">
+      <div class="inner">
+        <div class="gnb">
+          <a class="active" href="#portfolio">웹 포트폴리오</a>
+          <a href="#mobile">모바일 웹 앱</a>
+          <a href="#coding">코딩 포트폴리오</a>
+          <a href="#skills">스킬</a>
+        </div>
+      </div>
+      <div class="trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <!-- CSS 체크박스 속성을 활용한 탭메뉴 -->
+    <section id="portfolio">
+      <div class="inner">
+        <input type="radio" name="tabmenu" id="tab1">
+        <input type="radio" name="tabmenu" id="tab2">
+        <input type="radio" name="tabmenu" id="tab3">
+        <input type="radio" name="tabmenu" id="tab4">
+        <input type="radio" name="tabmenu" id="tab5">
+        <input type="radio" name="tabmenu" id="tab6" checked>
+        <div class="portfolio-heading">
+          <h2>웹 포트폴리오</h2>
+        </div>
+        <div class="portfolio-content">
+          <div class="portfolio-tabbox">
+            <label for="tab6">라이프워크</label>
+            <label for="tab1">취업성공패키지</label>
+            <label for="tab2">버거하우스</label>
+            <label for="tab4">효성TNS</label>
+            <label for="tab5">개인 포트폴리오</label>
+          </div>
+          <div class="tab-item opacity6">
+            <div class="pfc-photo">
+              <img src="images/portfolio-webs-006.png" alt="포트폴리오 네번째 이미지">
+            </div>
+            <div class="pfc-info">
+              <h3>
+                <span>Responsive Web</span>
+                라이프워크스</h3>
+              <p>
+                패션 쇼핑몰 라이프워크의 디자인만을 참조하여 클론코딩하였습니다. 모바일/태블릿의 반응형 웹페이지를 지원합니다<div class=""></div> 스와이퍼를 사용한 슬라이드를 지원하며
+                FLEX 레이아웃을 사용하였습니다. 
+              </p>
+              <ul>
+                <li>제작페이지 :<span>1개</span></li>
+                <li>제작방식 :<span>html + css + jquery</span></li>
+                <li>플러그인 :<span> SWIPER
+                  </span></li>
+                <li>UI 디자인 :<span> X </span></li>
+                <li>제작 참여율 :<span> 100%</span></li>
+              </ul>
+              <div class="web-linkbtn" data-uk-lightbox="animation: fade">
+                <a href="/portfolio/website-works/05/index.html" data-type="iframe">PC</a>
+                <a href="/portfolio/website-works/05/index.html" data-type="iframe">모바일</a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-item opacity5">
+            <div class="pfc-photo">
+              <img src="images/portfolio-webs-005.jpg" alt="포트폴리오 네번째 이미지">
+            </div>
+            <div class="pfc-info">
+              <h3>
+                <span>Responsive Web</span>
+                개인 포트폴리오 페이지</h3>
+              <p>
+                반응형 웹을 지원하는 개인 포트폴리오 페이지입니다. 많은 작업물을 쉽게 볼 수 있도록 제작하였고 유지보수가 쉽도록 코딩에 신경썼습니다.
+                탭 메뉴/라이트 박스/모바일 내비게이션에 신경써서 제작하였습니다.
+              </p>
+              <ul>
+                <li>제작페이지 :<span>1개</span></li>
+                <li>제작방식 :<span>html + css + jquery</span></li>
+                <li>플러그인 :<span> UIKIT(라이트박스)
+                  </span></li>
+                <li>UI 디자인 :<span> PhotoShop</span></li>
+                <li>제작 참여율 :<span> 100%</span></li>
+              </ul>
+              <div class="web-linkbtn" data-uk-lightbox="animation: fade">
+                <a href="/portfolio/website-works/01/index.html" data-type="iframe">모바일</a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-item opacity1">
+            <div class="pfc-photo">
+              <img src="images/portfolio-webs-001.png" alt="첫번째 포트폴리오 이미지">
+            </div>
+            <div class="pfc-info">
+              <h3>
+                <span>Desktop</span>
+                취업성공패키지</h3>
+              <p>
+                공기관 사이트를 가상으로 리뉴얼 작업했습니다. 데스크탑 버전을 지원하며 메인페이지와 사업소개, 자가진단, 참여방법, 약관동의 등 7개 페이지를 제작하여 기획 당시 다양한 형식의 웹페이지를
+                선보일
+                수 있도록 목표 한 프로젝트입니다. 전체 폰트는 Noto Sans Kr을 사용했습니다 <br>
+                유기적으로 연결되어 있는 여러 웹페이지를 제작하면서 코드가 부딪히지 않도록 짜임새 있게 코딩해야한다는 것을 배웠습니다.
+
+              </p>
+              <ul>
+                <li>제작페이지 :<span>7개</span></li>
+                <li>제작방식 :<span> html + css + jquery</span></li>
+                <li>플러그인 :<span> xeicon(아이콘 웹폰트) </span></li>
+                <li>UI 디자인 :<span> PhotoShop</span></li>
+                <li>제작 참여율 :<span> 100%</span></li>
+              </ul>
+              <div class="web-linkbtn" data-uk-lightbox="animation: fade">
+                <a href="portfolio/website-works/01/index.html" data-type="iframe">PC버전</a>
+                <a href="취업성공패키지.pdf" data-type="iframe">제작노트</a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-item opacity2">
+            <div class="pfc-photo">
+              <img src="images/portfolio-webs-002.png" alt="두번째 포트폴리오 이미지">
+            </div>
+            <div class="pfc-info">
+              <h3>
+                <span>Responsive Web</span>
+                버거하우스</h3>
+              <p>
+                해외 무료 웹 디자인 소스를 받아
+                퍼블리싱햇습니다. 반응형 페이지 연습을 위해 제작한 개인 프로젝트입니다. <br> 전체 폰트는 Alfa Slab One, 나눔 고딕, Noto Serif KR을 사용했습니다.
+              </p>
+              <ul>
+                <li>제작페이지 :<span>1개</span></li>
+                <li>제작방식 :<span> html + css + jquery</span></li>
+                <li>플러그인 :<span> Slick slider + fontawesome(아이콘웹폰트)</span></li>
+                <li>UI 디자인 :<span> PhotoShop</span></li>
+                <li>제작 참여율 :<span> 100%</span></li>
+              </ul>
+              <div class="web-linkbtn" data-uk-lightbox="animation: fade">
+                <a href="portfolio/website-works/02/index.html" data-type="iframe">PC버전</a>
+                <a href="portfolio/website-works/02" data-type="iframe">모바일</a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-item opacity4">
+            <div class="pfc-photo">
+              <img src="images/portfolio-webs-004.png" alt="포트폴리오 네번째 이미지">
+            </div>
+            <div class="pfc-info">
+              <h3>
+                <span>Responsive Web</span>
+                효성TNS</h3>
+              <p>
+                처음 혼자 힘으로 작업했던 개인 프로젝트입니다. 많은 오류를 만나면서 집중력과 문제 해결력을 키울 수 있었습니다.
+                모바일 네비게이션은 제이쿼리 Slide를 이용해 아코디언 형식으로 제작하였습니다. 전체 폰트는 기본 폰트를 사용했습니다. 모바일 지원하도록 6월에 반응형으로 수정하였습니다.
+              </p>
+              <ul>
+                <li>제작페이지 :<span>1개</span></li>
+                <li>제작방식 :<span>html + css + jquery</span></li>
+                <li>플러그인 :<span> bxslider
+                  </span></li>
+                <li>UI 디자인 :<span> PhotoShop</span></li>
+                <li>제작 참여율 :<span> 100%</span></li>
+              </ul>
+              <div class="web-linkbtn" data-uk-lightbox="animation: fade">
+                <a href="portfolio/website-works/04/index.html" data-type="iframe">PC버전</a>
+                <a href="portfolio/website-works/04" data-type="iframe">모바일</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="mobile">
+      <div class="inner">
+        <div class="mobile-heading">
+          <h2>모바일 웹 앱</h2>
+        </div>
+        <div class="mobile-content">
+          <div class="mobile-photo">
+            <div>
+              <img src="images/mobile-portfolio.png" alt="모바일 포트폴리오">
+            </div>
+          </div>
+          <div class="mobile-info">
+            <div>
+              <h3><span>소설 네트워크 <br> Novel NetWork</span> </h3>
+              <p>
+                웹소설 랭킹 사이트 소설 네트워크를 모바일 웹 앱전용으로 제작하였습니다. 레이아웃 배치방식은 flex로 제작하였습니다
+              </p>
+              <ul>
+
+                <li>제작페이지 :<span>5개</span></li>
+                <li>제작방식 :<span>html + css + jquery</span></li>
+                <li>플러그인 :<span> slick slider
+                  </span></li>
+                <li>UI 디자인 :<span> PhotoShop</span></li>
+                <li>제작 참여율 :<span> 100%</span></li>
+              </ul>
+              <div class="mobile-link">
+                <a href="html/mobile-guide.html"><div>제작노트 상세보기</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="coding">
+      <div class="inner">
+        <div class="coding-heading">
+          <h2>코딩 포트폴리오</h2>
+        </div>
+        <div class="coding-content">
+          <div>
+            <div class="coding-photo">
+              <div class="coding-modal" data-uk-lightbox="animation: fade">
+                <a href="html/prototype.html" data-type="iframe">
+                  <img src="images/pratical-01.png" alt="프로토타입">
+                  <span>clone coding</span>
+                </a>
+              </div>
+              <div class="coding-modal" data-uk-lightbox="animation: fade">
+                <a href="html/hover.html" data-type="iframe">
+                  <img src="images/pratical-hover-01.jpg" alt="프로토타입">
+                  <span>hover Effect</span>
+                </a>
+              </div>
+              <div class="coding-modal" data-uk-lightbox="animation: fade">
+                <a href="html/animation.html" data-type="iframe">
+                  <img src="images/pratical-animation-05.jpg" alt="프로토타입">
+                  <span>animation</span>
+                </a>
+              </div>
+              <div class="coding-modal" data-uk-lightbox="animation: fade">
+                <a href="html/etc.html" data-type="iframe">
+                  <img src="images/pratical-etc-05.jpg" alt="프로토타입">
+                  <span>Etc</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="inner">
+        <div class="skills-heading">
+          <h2>보유스킬</h2>
+        </div>
+        <div class="skills-content">
+          <article class="skill-item">
+            <h3><i class="xi-html5"></i>HTML</h3>
+            <P><span>웹 표준과 웹 접근성을 준수하는 HTML 정보 구조설계로 웹사이트 퍼블리싱이 가능합니다.</span>
+            </P>
+          </article>
+          <article class="skill-item">
+            <h3><i class="xi-css3"></i>CSS</h3>
+            <P>
+              안정적인 CSS속성을 사용해 HTML Element를 배치하고 디자인합니다. <span>
+                특별한 경우 CSS3에서 새롭게 지원하는 속성을 활용해 좀 더 다양한 CSS 배치와 디자인을 하고 있습니다.
+              </span>
+            </P>
+          </article>
+          <article class="skill-item">
+            <h3><i class="xi-javascript"></i>JQUERY</h3>
+            <P>
+              <span>
+                네비게이션, 탭 메뉴, 어코디언
+              </span> 등 웹사이트 상호작용에 필수적인 요소들은 플러그인을 사용하지 않고 <span>순수 제이쿼리 코딩</span>으로 제작합니다.
+            </P>
+          </article>
+          <article class="skill-item">
+            <h3><i class="xi-desktop"></i>Responsive Web</h3>
+            <P>
+              <span> 크로스브라우징(Cross Browsing)을 위해 안정적인 기존 방식인 float, position, Media Query를 활용한 반응형 웹 제작 경험을 충분히 가지고
+                있습니다.</span> 필요에
+              따라 Flex방식으로 반응형 웹 사이트 제작도 충분히 가능합니다
+            </P>
+          </article>
+          <article class="skill-item">
+            <h3><i class="xi-mobile"></i>Mobile Web App </h3>
+            <P>
+              <span>모바일 우선을 위해 Mobile First에 준하는 모바일 웹 앱 제작경험도 충분히 가지고 있습니다.</span> UI/UX 측면에서 미적인 디자인뿐만 아니라 모바일 사용자 경험에
+              최적화를 위해 효율적인
+              컨텐츠 배치를 우선적으로 생각합니다
+            </P>
+          </article>
+          <article class="skill-item">
+            <h3><i class="xi-photoshop"></i>PhotoShop</h3>
+            <P>
+              <span> 웹사이트 UI 디자인 작업, 배너 디자인을 위한 포토샵 사용에 익숙합니다
+              </span>
+            </P>
+          </article>
+          <article class="skill-item">
+            <h3><i class="xi-library-books"></i> TEXT EDITOR Used</h3>
+            <P>
+              <span><img src="images/text-editor-01.png" alt="비주얼스튜디오"></span>
+              <span><img src="images/text-editor-02.png" alt="블라켓츠"></span>
+              <span><img src="images/text-editor-03.png" alt="에디트플러스"></span>
+            </P>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 클릭 시 안의 코딩 작업물이 나옵니다 -->
+
+  </div>
+</body>
+
+</html>

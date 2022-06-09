@@ -1,0 +1,47 @@
+@media (max-width:768px) {
+  #footer {
+    height: auto;
+  }
+
+  .box1 {
+    display: none;
+  }
+  .box3 {
+    display: none;
+  }
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5 {
+    width: 100%;
+    float: none;
+  }
+  .box1 p,
+  .box2 p,
+  .box3 p,
+  .box4 p,
+  .box5 p{
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .box2,
+  .box3,
+  .box4,
+  .box5 {
+    margin: 0;
+    text-align: left;
+  }
+  .inner .ftitle {
+    font-size: 16px;
+    text-align: left;
+  }
+  .inner .box4 a {
+    text-align: left;
+    font-size: 13px;
+  }
+  .inner .box4 a {
+    display: inline-block;
+  }
+}

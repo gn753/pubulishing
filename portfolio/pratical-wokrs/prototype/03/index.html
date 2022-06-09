@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>1월 초 모바일 웹앱 프로젝트 담당역할 로그인</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="js/jquery.bxslider/jquery.bxslider.css" />
+  <style>
+    .inner {
+      width: 90%;
+      margin: auto;
+    }
+  </style>
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script>
+    //아이디암호입력 체크스립트
+    function idpwCheck() {
+
+      var idVal = document.getElementById('ida');
+      var pwVal = document.getElementById('pwa');
+
+      if (!idVal.value) {
+        alert("아이디를 입력하세요!");
+        idVal.focus();
+        return false;
+      }
+      if (!pwVal.value) {
+        alert("비밀번호를 입력하세요!");
+        pwVal.focus();
+        return false;
+      }
+      frm.submit(); // action으로 이동
+    }
+  </script>
+  </script>
+</head>
+
+<body id="body">
+  <dl class="skip">
+    <dt class="blind">skip navigation</dt>
+    <dd>
+      <a href="#contents">skip to contents</a>
+    </dd>
+  </dl>
+  <hr>
+  <div id="header">
+    <div class="headerwrap" class="clear">
+      <h1 class="logo"><a href="index.html">30CODE</a></h1>
+      <p class="search_bt">search</p>
+      <p class="menuBtn"><img src="menu.png" alt="menu"> menu</p>
+      <div id="menu">
+        <div class="visual">
+          <h1><a href="index.html"><img src="img/30code2.png" alt=""></a></h1>
+        </div>
+        <div class="login">
+          <ul>
+            <li><a href="login.html">LOGIN </a></li>
+            <li><a href="join.html">JOIN US </a></li>
+            <li><a href="order.html">ORDER </a></li>
+            <li><a href="#">CART </a></li>
+          </ul>
+
+        </div>
+        <div class="close"><a href=""><img src="img/cl.png" alt="close"></a></div>
+
+
+        <div class='category'>
+
+          <input class='c1' type="button" value='CATEGORY' onclick="document.querySelector('.c1').style.backgroundColor='#777';
+		   document.querySelector('.c1').style.color='#fff';
+		   document.querySelector('.c2').style.backgroundColor='#fff';
+		   document.querySelector('.c2').style.color='#777';">
+          <input class='c2' type="button" value='COMMUNITY' onclick="document.querySelector('.c1').style.backgroundColor='#fff';
+		   document.querySelector('.c1').style.color='#777';
+		   document.querySelector('.c1').style.border='1px solid #777';
+		   document.querySelector('.c2').style.backgroundColor='#777';
+		   document.querySelector('.c2').style.color='#fff';">
+        </div>
+        <div class="menu">
+          <ul class="gnb">
+            <li class="main"><a href="#">수트</a>
+              <ul class="sub">
+                <li><a href="product.html">여름 수트</a></li>
+                <li><a href="#">싱글 수트</a></li>
+                <li><a href="#">더블 수트</a></li>
+                <li><a href="#">스트라이프 수트</a></li>
+                <li><a href="#">3피스 수트</a></li>
+              </ul>
+            </li>
+            <li class="main"><a href="#">상의</a>
+              <ul class="sub">
+                <li><a href="#">반팔 티셔츠</a></li>
+                <li><a href="#">긴팔 티셔츠</a></li>
+                <li><a href="#">심플 셔츠</a></li>
+                <li><a href="#">체크 셔츠</a></li>
+                <li><a href="#">스트라이프 셔츠</a></li>
+              </ul>
+            </li>
+            <li class="main"><a href="#">아우터</a>
+              <ul class="sub">
+                <li><a href="#">코트</a></li>
+                <li><a href="#">블레이저</a></li>
+                <li><a href="#">가디건</a></li>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">가죽 무스탕</a></li>
+                <li><a href="#">자켓</a></li>
+                <li><a href="#">점퍼</a></li>
+                <li><a href="#">패딩</a></li>
+              </ul>
+            </li>
+            <li class="main"><a href="#">바지</a>
+              <ul class="sub">
+                <li><a href="#">슬랙스</a></li>
+                <li><a href="#">청바지</a></li>
+                <li><a href="#">면바지</a></li>
+                <li><a href="#">셋업 슬랙스</a></li>
+              </ul>
+            </li>
+            <li class="main"><a href="#">신발</a>
+              <ul class="sub">
+                <li><a href="#">슈즈</a></li>
+                <li><a href="#">핸드메이드 슈즈</a></li>
+              </ul>
+            </li>
+            <li class="main"><a href="#">액세서리</a>
+              <ul class="sub">
+                <li><a href="#">가방</a></li>
+                <li><a href="#">지갑</a></li>
+                <li><a href="#">넥타이</a></li>
+              </ul>
+            </li>
+            <li class="main"><a href="#">연예인 협찬</a>
+            </li>
+            <li class="main"><a href="#">SALE</a>
+            </li>
+            <li class="main"><a href="#">BIG SIZE</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="menu2">
+          <ul class="gnb2">
+            <li class="comm"><a href="customer.html">COMMUNITY</a></li>
+            <li><a href="#">NOTICE</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">배송문의</a></li>
+            <li><a href="#">상품문의</a></li>
+            <li><a href="#">문의게시판</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 검색폼추가 -->
+    <div class="search_wrap">
+      <form action="#" method="get" class="search_box">
+        <fieldset>
+          <legend class="blind">검색폼</legend>
+          <input type="search" placeholder="검색어입력" />
+          <input type="image" class="searchBtn" src="img/total_SearchBtn2.png" alt="검색" />
+        </fieldset>
+      </form>
+    </div><!-- search폼 -->
+  </div><!-- header end -->
+  <hr><!-- header end -->
+  <!--  detail container 상세화면 -->
+  <section id="container2">
+    <div class="inner">
+      <h1>LOGIN</h1>
+      <div class="loginPage">
+        <form action="login_ok.php" name="frm" method="post" onsubmit="return idpwCheck()">
+          <fieldset>
+            <legend class="blind">로그인폼</legend>
+            <!-- 아이디 비밀번호  -->
+            <div class="inputText">
+              <!--  p태그를 이용해 문단을 나눔 -->
+              <p>
+                <label for="id" class="blind">Member Id</label>
+                <input type="text" name="ida" id="ida" placeholder="아이디를 입력해 주세요" title="아이디입력">
+              </p>
+              <p>
+                <label for="pw" class="blind">Password</label>
+                <input type="password" name="pwa" id="pwa" placeholder="비밀번호를 입력해 주세요" title="비밀번호입력">
+              </p>
+              <!-- 자동로그인 -->
+              <div id="cbox">
+                <input type="checkbox" id="zadong">
+                <label for="zadong"><span>자동로그인</span></label>
+              </div>
+            </div>
+  
+            <!-- 검정색 로그인버튼 -->
+            <div class="inputBox">
+              <input type="submit" value="로그인">
+            </div>
+            <!-- 회 아 비 -->
+            <p class="loginbar_bottom">
+              <span><a href="join.html">회원가입 |</a></span>
+              <span><a href="#">아이디 찾기 |</a></span>
+              <span><a href="#">비밀번호 찾기</a></span>
+            </p>
+            <br>
+            <!--타사이트 로그인방식 -->
+            <p class="Kakao">
+              <a
+                href="https://accounts.kakao.com/login?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fproxy%3DeasyXDM_Kakao_vg1ayw87qo8_provider%26ka%3Dsdk%252F1.39.10%2520os%252Fjavascript%2520sdk_type%252Fjavascript%2520lang%252Fko-KR%2520device%252FWin32%2520origin%252Fhttps%25253A%25252F%25252Fwww.epis.or.kr%26origin%3Dhttps%253A%252F%252Fwww.epis.or.kr%26response_type%3Dcode%26redirect_uri%3Dkakaojs%26state%3Dt6ayt9t0yi4s7eij3wueg%26client_id%3D950f3ae1f2f550e5ba7ff7d9fffc7781">
+                <span>카카오 로그인</span></a>
+            </p>
+            <br>
+
+            <p class="Naver">
+              <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com">
+                <span>네이버 로그인</span></a>
+            </p>
+          </fieldset>
+        </form>
+      </div> <!-- loginPage END -->
+    </div>
+  </section>
+  <hr>
+  <!-- script link -->
+  <script src="js/jquery.bxslider/jquery.bxslider.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/common.js"></script>
+
+  <script>
+    $(".menuBtn").click(function () {
+      $("#menu").addClass("open");
+    });
+    $(".close").click(function () {
+      $("#menu").removeClass("open");
+    });
+  </script>
+  <script>
+    $('.main').click(function () {
+      $('.gnb li .sub').slideUp();
+      $(this).children('.sub').stop().slideToggle();
+    });
+
+    $('.c1').click(function () {
+      //$('.gnb').fadeToggle(1000);
+      //$('.gnb').slideToggle(600);
+      $(".menu").show();
+      $(".menu2").hide();
+
+    });
+    $('.c2').click(function () {
+      //$('.gnb').fadeToggle(1000);
+      //$('.gnb').slideToggle(600);
+      $(".menu2").show();
+      $(".menu").hide();
+    });
+  </script>
+  <!-- <script  src="./script.js"></script> -->
+</body>
+
+</html>

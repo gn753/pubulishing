@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lifeworks</title>
+    <!-- Fontawesome CDN 4.7 ver -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Swiper Js & Css -->
+    <script src="./js/swiper/swiper-bundle.js"></script>
+    <link rel="stylesheet" href="./js/swiper/swiper-bundle.css" />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./css/common/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reponsive.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="layout-header">
+      <div class="layout-header__inner">
+        <div class="header__pc-area">
+          <div class="header__nav-area">
+            <h1 class="logo">
+              <a href="/">
+                <img src="./assets/icon/logo.png" alt="라이프워크" />
+              </a>
+            </h1>
+            <nav class="gnb">
+              <ul>
+                <li class="gnb__main">
+                  <a class="gnb__main-btn" href="#">ONLINE ONLY</a>
+                </li>
+                <li class="gnb__main">
+                  <a class="gnb__main-btn" href="#">SPECIAL</a>
+                  <ul class="gnb__sub">
+                    <li><a href="#">NEW SET UP</a></li>
+                    <li><a href="#">PERFECT 2WAY</a></li>
+                  </ul>
+                </li>
+                <li class="gnb__main">
+                  <a class="gnb__main-btn" href="#">NEW</a>
+                </li>
+                <li class="gnb__main">
+                  <a class="gnb__main-btn" href="#">MEN</a>
+                  <ul class="gnb__sub">
+                    <li><a href="#">OUTER</a></li>
+                    <li><a href="#">TOP</a></li>
+                    <li><a href="#">BOTTOM</a></li>
+                    <li><a href="#">SET</a></li>
+                    <li><a href="#">SALE</a></li>
+                  </ul>
+                </li>
+                <li class="gnb__main">
+                  <a class="gnb__main-btn" href="#">WOMEN</a>
+                  <ul class="gnb__sub">
+                    <li><a href="#">OUTER</a></li>
+                    <li><a href="#">TOP</a></li>
+                    <li><a href="#">BOTTOM</a></li>
+                    <li><a href="#">SET</a></li>
+                    <li><a href="#">ONEPIECE</a></li>
+                    <li><a href="#">SALE</a></li>
+                  </ul>
+                </li>
+                <li class="gnb__main">
+                  <a class="gnb__main-btn" href="#">KIDS</a>
+                </li>
+                <li class="gnb__main">
+                  <a class="gnb__main-btn" href="#">ACC</a>
+                  <ul class="gnb__sub">
+                    <li><a href="#">HAT</a></li>
+                    <li><a href="#">BAG</a></li>
+                    <li><a href="#">SOCKS</a></li>
+                    <li><a href="#">SHOES & ETC</a></li>
+                    <li><a href="#">PET</a></li>
+                    <li><a href="#">SALE</a></li>
+                  </ul>
+                </li>
+                <li class="gnb__main">
+                  <a class="gnb__main-btn" href="#">OUTLET</a>
+                  <ul class="gnb__sub">
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">KIDS</a></li>
+                    <li><a href="#">ACC</a></li>
+                  </ul>
+                </li>
+                <li class="gnb__main">
+                  <span class="gnb__main-btn hover-none">BRAND</span>
+                  <ul class="gnb__sub">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">LOOKBOOK</a></li>
+                    <li><a href="#">JOURNAL</a></li>
+                    <li><a href="#">STORE INFO</a></li>
+                    <li><a href="#">PARTNERSHIP</a></li>
+                    <li><a href="#">MEMBERSHIP</a></li>
+                  </ul>
+                </li>
+                <li class="gnb__main">
+                  <a class="gnb__main-btn" href="#">LIFESTYLE</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <nav class="lnb">
+            <li><a class="lnb__btn" href="#">LOGIN</a></li>
+            <li><a class="lnb__btn" href="#">JOIN</a></li>
+            <li><a class="lnb__btn" href="#">MYPAGE</a></li>
+            <li>
+              <a class="lnb__btn lnb__cart" href="#">
+                <div>CART</div>
+
+                <div class="cart-amount">0</div>
+              </a>
+            </li>
+            <li><a class="lnb__btn" href="#">COMMUNITY</a></li>
+            <i role="button" class="search-icon"></i>
+          </nav>
+        </div>
+        <!-- 검색창 -->
+        <div class="search-bar">
+          <div class="search-bar__inner">
+            <label class="search-bar-box">
+              <input type="search" placeholder="간절기 코디 끝, 후드 맨투맨" />
+            </label>
+            <button class="search-icon">
+              <img src="./assets/icon/icon-search.png" />
+            </button>
+
+            <button class="xx-icon">
+              <img src="./assets/icon/icon-xx.png" />
+            </button>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div class="header__mb-area">
+          <div class="trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <h1 class="mobile-logo">
+            <a href="/">
+              <img src="./assets/icon/logo.png" alt="라이프워크" />
+            </a>
+          </h1>
+          <div class="mobile-cart">
+            <a href="#" class="icon-cart">
+              <img src="./assets/icon/icon-cart.png" />
+              <span>0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="visual">
+      <div class="swiper visual-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide visual-slide1"><a href="#"></a></div>
+          <div class="swiper-slide visual-slide2"><a href="#"></a></div>
+          <div class="swiper-slide visual-slide3"><a href="#"></a></div>
+          <div class="swiper-slide visual-slide4"><a href="#"></a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <div class="main">
+      <div class="container-1260">
+        <ul class="mobile-categori">
+          <li><a href="#">MEN</a></li>
+          <li><a href="#">WOMEN</a></li>
+          <li><a href="#">SPECIAL</a></li>
+        </ul>
+        <section class="main__special">
+          <ul class="main__special-items">
+            <li class="main__special-item">
+              <a class="main__special-figure" href="#">
+                <img
+                  src="./assets/img/img-main-special-01.gif"
+                  alt="UNIVERSITY SET UP"
+                />
+              </a>
+              <div class="main__special-text">
+                <h3>LOOKBOOK</h3>
+                <p>대담한 패턴과 편안한 핏의 21FW 에센셜</p>
+                <a class="main__special-more" href="#">more</a>
+              </div>
+            </li>
+            <li class="main__special-item">
+              <a class="main__special-figure" href="#">
+                <img
+                  src="./assets/img/img-main-special-02.jpg"
+                  alt="UNIVERSITY SET UP"
+                />
+              </a>
+              <div class="main__special-text">
+                <h3>STORE</h3>
+                <p>가까운 위치의 매장을 찾아보세요</p>
+                <a class="main__special-more" href="#">more</a>
+              </div>
+            </li>
+            <li class="main__special-item">
+              <a class="main__special-figure" href="#">
+                <img
+                  src="./assets/img/img-main-special-03.gif"
+                  alt="UNIVERSITY SET UP"
+                />
+              </a>
+              <div class="main__special-text">
+                <h3>ONLINE ONLY!</h3>
+                <p>꾸준히 사랑받는 아이코닉 아이템</p>
+                <a class="main__special-more" href="#">more</a>
+              </div>
+            </li>
+            <li class="main__special-item">
+              <a class="main__special-figure" href="#">
+                <img
+                  src="./assets/img/img-main-special-04.gif"
+                  alt="UNIVERSITY SET UP"
+                />
+              </a>
+              <div class="main__special-text">
+                <h3>KIDS BUBBLING</h3>
+                <p>새롭게 선보이는 21FW 키즈 아이템</p>
+                <a class="main__special-more" href="#">more</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- 룩북 -->
+        <section class="main__special lookbook">
+          <ul class="main__special-items">
+            <li class="main__special-item">
+              <a class="main__special-figure" href="#">
+                <img
+                  src="./assets/img/img-main-lookbook-01.jpg"
+                  alt="UNIVERSITY SET UP"
+                />
+              </a>
+              <div class="main__special-text">
+                <h3>LOOKBOOK</h3>
+                <p>대담한 패턴과 편안한 핏의 21FW 에센셜</p>
+                <a class="main__special-more" href="#">more</a>
+              </div>
+            </li>
+            <li class="main__special-item">
+              <a class="main__special-figure" href="#">
+                <img
+                  src="./assets/img/img-main-store-01.jpg"
+                  alt="UNIVERSITY SET UP"
+                />
+              </a>
+              <div class="main__special-text">
+                <h3>STORE</h3>
+                <p>가까운 위치의 매장을 찾아보세요</p>
+                <a class="main__special-more" href="#">more</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="main__brand">
+        <div class="logo-insta">
+          <a href="https://www.instagram.com/lifework.official/">
+            <h2>INSTAGRAM</h2>
+            <img src="./assets/img/img-instagram-logo1.png" alt="인스타" />
+            <span>@lifework.official</span>
+          </a>
+        </div>
+        <ul class="main__brand-nav">
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">JOURNAL</a></li>
+          <li><a href="#">STORE INFO</a></li>
+          <li><a href="#">PARTNERSHIP</a></li>
+        </ul>
+      </section>
+    </div>
+    <!-- footer  -->
+    <footer class="layout-footer">
+      <div class="container-1260">
+        <div class="footer__header">
+          <div>
+            <a href="#">AGREEMENT</a>
+            <a href="#">PRIVACY POLICY</a>
+          </div>
+        </div>
+        <div class="footer__body">
+          <div class="footer__left">
+            <div role="button" class="footer__left__item">
+              <p>
+                <span role="button" class="footer__cs-title">CS CENTER</span>
+                <b class="footer__phone-number"> 02 2032 9077 </b>
+              </p>
+              <p class="footer__cs-hours">
+                <span>
+                  MON - FRI 10:00 - 17:00 <br />
+                  SAT, SUN, HOLIDAY CLOSED
+                </span>
+                <span>
+                  ※ 오프라인 구매건은 구매하신 매장으로 직접 문의하시기 바랍니다
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="footer__center">
+            <div class="footer__center__item">
+              <span>BANK INFORMATION</span>
+              <b class="footer__bank-number">
+                우리은행 <br />
+                1005 203 574362
+              </b>
+              <span>(주)하이드어웨이</span>
+            </div>
+          </div>
+          <div class="footer__right">
+            <div>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true">인스타그램</i>
+              </a>
+              <a href="#">
+                <i class="fa fa-youtube" aria-hidden="true">유튜브</i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__footer">
+          <span class="footer__info-check-btn">LIFEWORK 정보확인</span>
+          <address class="footer__addr">
+            <ul class="footer__addr-items">
+              <li class="footer__addr-item">
+                <b>COMPANY</b>
+                <span>주식회사 하이드어웨이</span>
+              </li>
+              <li class="footer__addr-item">
+                <b>ADDRESS </b>
+                <span>
+                  서울특별시 강남구 언주로174길 14 (명경빌딩) 라이프워크
+                </span>
+              </li>
+              <li class="footer__addr-item">
+                <b>LOGISTICS</b>
+                <span>경기도 파주시 광탄면 장지산로 282-1</span>
+              </li>
+              <li class="footer__addr-item">
+                <b>대표자</b>
+                <span>김상훈</span>
+              </li>
+              <li class="footer__addr-item">
+                <b>TEL</b>
+                <span>TEL 02-2032-9077</span>
+              </li>
+              <li class="footer__addr-item">
+                <b>FAX</b>
+                <span>02-2032-9000</span>
+              </li>
+              <li class="footer__addr-item">
+                <b>BUSINESS LICENCE</b>
+                <span>684-81-01164 [사업자정보확인]</span>
+              </li>
+              <li class="footer__addr-item">
+                <b>MAIL-ORDER LICENSE</b>
+                <span>제2018-서울강남-04075호</span>
+              </li>
+              <li class="footer__addr-item">
+                <b>WEBMASTER</b>
+                <span>임수환</span>
+              </li>
+            </ul>
+            <p class="footer__copyright">
+              <b>COPYRIGHT (c) 주식회사 하이드어웨이</b>
+              <span>ALL RIGHTS RESERVED.</span>
+            </p>
+            <div class="kcp-mark">
+              <img src="/assets/img/img-footer-kcp.png" />
+            </div>
+          </address>
+        </div>
+      </div>
+    </footer>
+
+    <!-- aside  -->
+    <div class="overlay"></div>
+    <nav class="aside">
+      <div>
+        <div class="aside__lnb">
+          <a href="#">LOGIN</a>
+          <a href="#">JOIN</a>
+        </div>
+        <div class="aside__search">
+          <input type="search" placeholder="간절기 코디 끝, 후드 맨투맨" />
+          <button></button>
+        </div>
+        <div class="aside__nav-wrap">
+          <div class="aside__tab">
+            <a class="tab-link current" href="#" data-tab="tab-1"> CATEGORY </a>
+            <a class="tab-link" href="#" data-tab="tab-2"> COMMUNITY </a>
+          </div>
+          <div class="aside-bottom-line"></div>
+          <div id="tab-1" class="tab-content current">
+            <ul class="aside__categori">
+              <li class="aside__categori__main">
+                <span class="aside__categori__main-btn">ONLINE ONLY</span>
+                <ul class="aside__categori__sub">
+                  <li><a href="#none">All</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="aside__categori__main-btn">SPECIAL</span>
+                <ul class="aside__categori__sub">
+                  <li><a href="#none">All</a></li>
+                  <li><a href="#none">NEW SET UP</a></li>
+                  <li><a href="#none">PERFECT 2WAY</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="aside__categori__main-btn">NEW</span>
+                <ul class="aside__categori__sub">
+                  <li><a href="#none">All</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="aside__categori__main-btn">MEN</span>
+                <ul class="aside__categori__sub">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#">OUTER</a></li>
+                  <li><a href="#">TOP</a></li>
+                  <li><a href="#">BOTTOM</a></li>
+                  <li><a href="#">SET</a></li>
+                  <li><a href="#">SALE</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="aside__categori__main-btn">WOMEN</span>
+                <ul class="aside__categori__sub">
+                  <li><a href="#none">All</a></li>
+                  <li><a href="#">OUTER</a></li>
+                  <li><a href="#">TOP</a></li>
+                  <li><a href="#">BOTTOM</a></li>
+                  <li><a href="#">SET</a></li>
+                  <li><a href="#">ONEPIECE</a></li>
+                  <li><a href="#">SALE</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="aside__categori__main-btn" href="#">KIDS</span>
+                <ul class="aside__categori__sub">
+                  <li><a href="#none">All</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="aside__categori__main-btn" href="#">ACC</span>
+                <ul class="aside__categori__sub">
+                  <li><a href="#none">All</a></li>
+                  <li><a href="#">HAT</a></li>
+                  <li><a href="#">BAG</a></li>
+                  <li><a href="#">SOCKS</a></li>
+                  <li><a href="#">SHOES & ETC</a></li>
+                  <li><a href="#">PET</a></li>
+                  <li><a href="#">SALE</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="aside__categori__main-btn" href="#">OUTLET</span>
+                <ul class="aside__categori__sub">
+                  <li><a href="#none">All</a></li>
+                  <li><a href="#">MEN</a></li>
+                  <li><a href="#">WOMEN</a></li>
+                  <li><a href="#">KIDS</a></li>
+                  <li><a href="#">ACC</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="aside-bottom-line"></div>
+          </div>
+          <div id="tab-2" class="tab-content">
+            <ul class="aside__community">
+              <li><a href="#">NOTICE</a></li>
+              <li><a href="#">REVIEW</a></li>
+              <li><a href="#">Q&A</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="aside__nav-etc">
+            <div class="aside__cs">
+              <p>CS CENTER</p>
+              <p>02-2032-9077</p>
+              <span>MON-FRI (10:00 - 17:00)</span>
+            </div>
+            <div class="aside__brand">
+              <span class="aside__brand-title">BRAND</span>
+              <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">LOOKBOOK</a></li>
+                <li><a href="#">JOURNAL</a></li>
+                <li><a href="#">STORE INFO</a></li>
+                <li><a href="#">PARTNERSHIP</a></li>
+                <li><a href="#">MEMBERSHIP</a></li>
+              </ul>
+            </div>
+            <div class="aside__life">
+              <span class="aside__life-title">LIFESTYLE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Juqery 2.24 Ver CDN -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+    <script>
+      var swiper = new Swiper(".visual-container", {
+        spaceBetween: 0,
+        slidesPerView: "auto",
+        autoplay: true,
+        centeredSlides: true,
+        roundLengths: true,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

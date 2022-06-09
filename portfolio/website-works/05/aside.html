@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common/common.css" />
+    <style>
+      a {
+        color: #fff;
+      }
+
+      .aside {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        box-sizing: border-box;
+        height: 100%;
+        padding-bottom: 20px;
+        overflow: auto;
+        width: 87%;
+        z-index: 2001;
+        background-color: #000;
+        color: #fff;
+      }
+
+      .aside__lnb {
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 8px 15px 20px;
+      }
+
+      .aside__lnb a {
+        padding: 0 14px;
+        padding-bottom: 29px;
+        font-size: 14px;
+      }
+
+      .aside__search {
+        position: relative;
+        padding: 10px 20px;
+      }
+
+      .aside__search input[type="search"] {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        outline: none;
+        border: 1px solid #767676;
+        box-sizing: border-box;
+        text-align: left;
+        background: transparent;
+        color: #fff;
+      }
+
+      .aside__search input[type="search"]::placeholder {
+        padding-left: 5px;
+      }
+
+      .aside__search input[type="search"] + button {
+        position: absolute;
+        top: 50%;
+        right: 40px;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background-image: url("/assets/icon/icon-search.png");
+        background-color: transparent;
+        cursor: pointer;
+      }
+
+      .aside__tab a {
+        position: relative;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 19px;
+        padding-left: 20px;
+        line-height: 55px;
+      }
+
+      .aside__tab a:nth-child(1):after {
+        content: "";
+        position: absolute;
+        left: 20px;
+        bottom: 0;
+        width: 50px;
+        height: 1px;
+        background: #fff;
+      }
+
+      .aside__nav {
+        margin-left: 20px;
+      }
+
+      .aside__nav__main-btn {
+        display: block;
+        color: #fff;
+        padding: 0;
+        font-size: 36px;
+        font-weight: 600;
+      }
+
+      .aside__nav__sub {
+        display: none;
+        padding: 0 14px;
+        font-size: 15px;
+      }
+
+      .aside__nav__sub {
+      }
+
+      .aside__nav-etc {
+        padding-left: 20px;
+        padding-right: 10px;
+      }
+
+      .aside__cs {
+        padding-top: 15px;
+      }
+
+      .aside__cs p {
+        height: 29px;
+        font-weight: 600;
+      }
+
+      .aside__cs p:nth-child(1) {
+        font-size: 21px;
+      }
+
+      .aside__cs p:nth-child(2) {
+        font-size: 25px;
+      }
+
+      .aside__cs p:nth-of-type(2) {
+        margin-top: 20px;
+      }
+
+      .aside__cs span {
+        display: block;
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 10px;
+      }
+
+      .aside__brand,
+      .aside__life {
+        margin-top: 40px;
+        padding-top: 30px;
+        border-top: 1px solid #999;
+      }
+
+      .aside__brand ul,
+      .aside__life ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow: hidden;
+      }
+
+      .aside__brand ul li {
+        width: 33.333%;
+      }
+
+      .aside__brand-title,
+      .aside__life-title {
+        display: block;
+        font-size: 21px;
+        font-weight: 700;
+        padding-bottom: 10px;
+      }
+
+      .aside__brand ul li {
+        padding-bottom: 10px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 모바일 네비게이션 -->
+    <nav class="aside">
+      <div class="">
+        <div class="aside__lnb">
+          <a href="#">LOGIN</a>
+          <a href="#">JOIN</a>
+        </div>
+        <div class="aside__search">
+          <input type="search" placeholder="간절기 코디 끝, 후드 맨투맨" />
+          <button></button>
+        </div>
+        <div class="aside__nav-wrap">
+          <div class="aside__tab">
+            <a href="#"> CATEGORY </a>
+            <a href="#"> COMMUNITY </a>
+          </div>
+          <ul class="aside__nav">
+            <li class="aside__nav__main">
+              <span class="aside__nav__main-btn">ONLINE ONLY</span>
+              <ul class="aside__nav__sub">
+                <li><a href="#none">All</a></li>
+              </ul>
+            </li>
+            <li>
+              <span class="aside__nav__main-btn special-color">SPECIAL</span>
+              <ul class="aside__nav__sub">
+                <li><a href="#none">All</a></li>
+                <li><a href="#none">NEW SET UP</a></li>
+              </ul>
+            </li>
+            <li>
+              <span class="aside__nav__main-btn">NEW</span>
+              <ul class="aside__nav__sub">
+                <li><a href="#none">All</a></li>
+              </ul>
+            </li>
+            <li>
+              <span class="aside__nav__main-btn">MEN</span>
+              <ul class="aside__nav__sub">
+                <li><a href="#">All</a></li>
+                <li><a href="#">OUTER</a></li>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#">BOTTOM</a></li>
+                <li><a href="#">SET</a></li>
+                <li><a href="#">SALE</a></li>
+              </ul>
+            </li>
+            <li>
+              <span class="aside__nav__main-btn">WOMEN</span>
+              <ul class="aside__nav__sub">
+                <li><a href="#none">All</a></li>
+                <li><a href="#">OUTER</a></li>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#">BOTTOM</a></li>
+                <li><a href="#">SET</a></li>
+                <li><a href="#">ONEPIECE</a></li>
+                <li><a href="#">SALE</a></li>
+              </ul>
+            </li>
+            <li>
+              <span class="aside__nav__main-btn" href="#">KIDS</span>
+              <ul class="aside__nav__sub">
+                <li><a href="#none">All</a></li>
+              </ul>
+            </li>
+            <li>
+              <span class="aside__nav__main-btn" href="#">ACC</span>
+              <ul class="aside__nav__sub">
+                <li><a href="#none">All</a></li>
+                <li><a href="#">HAT</a></li>
+                <li><a href="#">BAG</a></li>
+                <li><a href="#">SOCKS</a></li>
+                <li><a href="#">SHOES & ETC</a></li>
+                <li><a href="#">PET</a></li>
+                <li><a href="#">SALE</a></li>
+              </ul>
+            </li>
+            <li>
+              <span class="aside__nav__main-btn" href="#">OUTLET</span>
+              <ul class="aside__nav__sub">
+                <li><a href="#none">All</a></li>
+                <li><a href="#">MEN</a></li>
+                <li><a href="#">WOMEN</a></li>
+                <li><a href="#">KIDS</a></li>
+                <li><a href="#">ACC</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="aside__nav-etc">
+            <div class="aside__cs">
+              <p>CS CENTER</p>
+              <p>02-2032-9077</p>
+              <span>MON-FRI (10:00 - 17:00)</span>
+            </div>
+            <div class="aside__brand">
+              <span class="aside__brand-title">BRAND</span>
+              <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">LOOKBOOK</a></li>
+                <li><a href="#">JOURNAL</a></li>
+                <li><a href="#">STORE INFO</a></li>
+                <li><a href="#">PARTNERSHIP</a></li>
+                <li><a href="#">MEMBERSHIP</a></li>
+              </ul>
+            </div>
+            <div class="aside__life">
+              <span class="aside__life-title">LIFESTYLE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

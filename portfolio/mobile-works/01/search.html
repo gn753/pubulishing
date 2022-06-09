@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>소설 검색창</title>
+  <!-- fontawesome 4.7 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- xeicon -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!-- CDN jquery 3.21  -->
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- CDN Slick CSS & JS -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Custom css -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/search.css">
+</head>
+
+<body>
+  <div class="header-include"></div>
+  <main class="main">
+    <section class="content1">
+      <div class="search-form">
+        <input type="text" placeholder="검색...">
+        <span>찾으시는 웹소설이 있으신가요 검색어를 입력해보세요</span>
+      </div>
+    </section>
+    <section class="content2">
+      <article class="search-info">
+        <h2>베스트 & 나의 취향</h2>
+        <ul>
+          <li>각 플랫폼별 베스트 웹소설</li>
+          <li>나와 취향이 비슷한 사람들의 추</li>
+        </ul>
+      </article>
+      <article class="search-info">
+        <h2>리뷰어 & 작가</h2>
+        <ul>
+          <li>베스트 리뷰어</li>
+          <li>베스트 작가</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  <div class="footer-include"></div>
+  <script>
+    $('.header-include').load('header.html' ,function(){
+      $('.trigger').click(function(){
+        $('.gnb, .trigger, .overlay').toggleClass('active')
+    })
+    $('.overlay, .gnb a').click(function () {
+        $('.gnb, .trigger, body, .overlay').removeClass('active')
+    })
+    })
+    $('.footer-include').load('footer.html')
+  </script>
+</body>
+
+</html>

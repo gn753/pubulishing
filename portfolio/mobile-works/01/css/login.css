@@ -1,0 +1,80 @@
+body {
+  padding-top: 30px;
+  background: #fff;
+}
+main {
+  background: #fff;
+}
+.login-inner {
+  margin: 0 25px;
+}
+.login-heading {
+  margin-bottom: 25px;
+}
+.login-heading h2 {
+  font-size: 17.5px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.login-content {
+}
+.login-input {
+  margin-bottom: 20px;
+}
+.login-input > input {
+  display: block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 12px;
+  border: none;
+  border-bottom: 1px solid #ECECEC;
+}
+.login-check {
+  margin-bottom: 24px;
+}
+input[type=checkbox] {
+  display: none;
+}
+label[for=chek] {
+  display: flex;
+  align-items: center;
+  font-size: 9.5px;
+}
+label[for=chek] em {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 5px;
+  background: url(../images/checkbox-03.png) no-repeat;
+  background-position: left center;
+}
+input[type=checkbox]:checked + label em {
+  background-position: right center;
+}
+.login-btn {}
+.login-btn button {
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 11px;
+}
+.login-btn button:nth-child(1) {
+  background: #23D2E2;
+}
+.login-btn button:nth-child(2) {
+  background: #FEE500;
+}
+.login-btn button:nth-child(3) {
+  background: #19CE60;
+}
+.login-etc{
+  display: flex;
+  justify-content: space-between;
+}
+.login-etc a {
+  font-size: 9.5px;
+}

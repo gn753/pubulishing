@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>모여라 리뷰</title>
+  <!-- fontawesome 4.7 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- xeicon -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!-- CDN jquery 3.21  -->
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- CDN Slick CSS & JS -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Custom css & js-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/community.css">
+</head>
+
+<body>
+  <div class="header-include"></div>
+  <main class="main">
+    <section class="community-inner">
+        <div class="community-heading">
+          <h2>토픽</h2>
+          <a href="#none">글쓰기</a>
+        </div>
+        <div class="commuinty-content">
+          <div class="board-item">
+            <h5>[작품/작가] 비전투적 소설 추천해주세요</h5>
+            <span>
+              <em><i class="fa fa-arrow-up"> 1</i><i class="fa fa-arrow-down"> 0</i><i class="fa fa-comments"> 0</i></em> 익명1
+            </span>
+            <em></em>
+          </div>
+          <div class="board-item">
+            <h5>[작품/작가] 비전투적 소설 추천해주세요</h5>
+            <span>
+              <em><i class="fa fa-arrow-up"> 1</i><i class="fa fa-arrow-down"> 0</i><i class="fa fa-comments"> 0</i></em> 익명1
+            </span>
+            <em></em>
+          </div>
+          <div class="board-item">
+            <h5>[작품/작가] 비전투적 소설 추천해주세요</h5>
+            <span>
+              <em><i class="fa fa-arrow-up"> 1</i><i class="fa fa-arrow-down"> 0</i><i class="fa fa-comments"> 0</i></em> 익명1
+            </span>
+            <em></em>
+          </div>
+          <div class="board-item">
+            <h5>[작품/작가] 비전투적 소설 추천해주세요</h5>
+            <span>
+              <em><i class="fa fa-arrow-up"> 1</i><i class="fa fa-arrow-down"> 0</i><i class="fa fa-comments"> 0</i></em> 익명1
+            </span>
+            <em></em>
+          </div>
+          <div class="board-item">
+            <h5>[작품/작가] 비전투적 소설 추천해주세요</h5>
+            <span>
+              <em><i class="fa fa-arrow-up"> 1</i><i class="fa fa-arrow-down"> 0</i><i class="fa fa-comments"> 0</i></em> 익명1
+            </span>
+            <em></em>
+          </div>
+          <div class="board-item">
+            <h5>[작품/작가] 비전투적 소설 추천해주세요</h5>
+            <span>
+              <em><i class="fa fa-arrow-up"> 1</i><i class="fa fa-arrow-down"> 0</i><i class="fa fa-comments"> 0</i></em> 익명1
+            </span>
+            <em></em>
+          </div>
+        </div>
+    </section>
+  </main>
+  <div class="footer-include"></div>
+  <!-- footer include -->
+  <script>
+    $('.header-include').load('header.html' ,function(){
+      $('.trigger').click(function(){
+        $('.gnb, .trigger, .overlay').toggleClass('active')
+    })
+    $('.overlay, .gnb a').click(function () {
+        $('.gnb, .trigger, body, .overlay').removeClass('active')
+    })
+    })
+    $('.footer-include').load('footer.html')
+  </script>
+</body>
+
+</html>

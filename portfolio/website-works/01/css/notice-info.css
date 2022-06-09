@@ -1,0 +1,316 @@
+/* FontAwesome CDN 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* 각 메뉴 클릭시 배경유지 */
+#gheader>ul>li:nth-child(4) {
+  background-color: #006EBE
+}
+
+/* ######################## Container ################# */
+#container {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.subwrap .inner {
+  overflow: hidden;
+}
+
+.selected-page {
+  float: left;
+  width: 180px;
+  height: 40px;
+  margin-right: 2px;
+  line-height: 40px;
+  padding-left: 20px;
+  font-size: 14px;
+  border-right: 1px solid rgb(239, 239, 239);
+}
+
+.select-list {
+  float: left
+}
+
+.select-list select[name=list] {
+  height: 40px;
+  width: 200px;
+  border: none;
+  border-right: 1px solid rgb(239, 239, 239);
+}
+
+.subwrap {
+  height: 44px;
+  width: 100%;
+  border: 1px solid rgb(239, 239, 239);
+  box-sizing: border-box;
+}
+
+.subwrap .inner {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.homebox {
+  width: 50px;
+  height: 40px;
+  float: left;
+  border-left: 1px solid rgb(239, 239, 239);
+  border-right: 1px solid rgb(239, 239, 239);
+  box-sizing: border-box;
+}
+
+.homebox li {
+  text-align: center;
+  height: 40px;
+}
+
+.homebox li img {
+  height: 16px;
+}
+
+.homebox li a {
+  display: block;
+  line-height: 40px;
+}
+
+.subtit {
+  height: 200px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.subtit h1 {
+  text-align: center;
+  line-height: 200px;
+}
+
+/* 서브 페이지3 시작 */
+.agency-search {
+  box-sizing: border-box;
+  height: auto;
+  border: 4px solid #eee;
+  position: relative;
+}
+
+.agency-search .inner {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.cont {
+  display: inline-block;
+}
+
+label[class=chek] {
+  margin: 15px;
+}
+
+.agency-search ul li {
+  height: 50px;
+  width: 90%;
+}
+
+.agency-search ul li>span {
+  font-weight: bold;
+}
+
+/* 셀렉트박스 */
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-select {
+  padding: 5px 15px;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  width: 786px;
+  border: 1px solid #000;
+  margin-left: 38px;
+  position: relative;
+}
+
+.fa {
+  float: right;
+  margin-top: 4px;
+}
+
+.dropdown-list {
+  border-radius: 4px;
+  background-color: #fff;
+  position: absolute;
+  left: 76px;
+  border: 1px solid #000;
+  top: 90px;
+  display: none;
+  z-index: 100;
+}
+
+.dropdown-list .dropdown-list_item {
+  padding: 5px 15px;
+  width: 786px;
+}
+
+.dropdown-list_item:hover {
+  background: dodgerblue;
+}
+
+.active {
+  display: block;
+}
+
+.dropdown2 {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-select2 {
+  padding: 5px 15px;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  width: 200px;
+  border: 1px solid #000;
+  margin-left: 23px;
+}
+
+.fa {
+  float: right;
+  margin-top: 4px;
+}
+
+.dropdown-list2 {
+  border-radius: 4px;
+  background-color: #fff;
+  position: absolute;
+  left: 23px;
+  border: 1px solid #000;
+  top: 40px;
+  opacity: 0
+}
+
+.dropdown-list2 .dropdown-list_item {
+  padding: 5px 15px;
+  width: 200px;
+}
+
+.dropdown-list_item:hover {
+  background: dodgerblue;
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.search-bar {
+  padding: 11px 15px 6px 15px;
+  border-radius: 4px;
+  width: 550px;
+  display: inline-block;
+}
+
+.agency-search .button {
+  position: absolute;
+  top: 50px;
+  right: 60px;
+  width: 100px;
+  height: 80px;
+  padding-left: 40px;
+  border-left: 1px solid #ddd;
+}
+
+.agency-search .button button {
+  width: 94px;
+  height: 72px;
+  background-color: #0a75e3;
+  ;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.list-top {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.list-top span {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+}
+
+.list-top a {
+  float: right;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #ddd;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.list-top select {
+  float: right;
+  height: 50px;
+  line-height: 50px;
+}
+
+.agency-board {
+  width: 1200px;
+  box-sizing: border-box;
+}
+
+.agency-board table {
+  width: 100%;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.agency-board thead {
+  background: rgba(209, 206, 206, 0.39);
+  border-top: 2px solid #000;
+}
+
+.agency-board table tr>th,
+.agency-board table tr>td {
+  height: 50px;
+}
+
+.agency-board table tr>td {
+  border-bottom: 1px solid #ddd;
+}
+
+.agency-board table tr>td:nth-child(3) {
+  text-align-last: left;
+}
+
+.pagination {
+  width: 1200px;
+}
+
+.pagination a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background: #0062b1;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}

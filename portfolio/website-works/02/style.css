@@ -1,0 +1,535 @@
+/* FontAwesome CDN 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* 웹폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+@font-face {
+  src: url('fonts//AlfaSlabOne-Regular.ttf');
+  font-family: 'burger';
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* color */
+:root {
+  --first-color: #4E2F1B;
+  --second-color: #FFC034;
+}
+
+/* layout */
+
+#header,
+#footer {
+  width: 100%;
+  margin: auto;
+}
+
+#header {
+  height: 700px;
+  background: url(images/bg.png);
+  position: relative;
+}
+
+section {
+  height: auto;
+}
+
+/* ###################### Header ##########################3 */
+.top {
+  height: 150px;
+  /*  예비 삭제 */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: url(images/bg.png);
+  z-index: 10;
+}
+
+.bottom {
+  height: 550px;
+  position: relative;
+  /* 예비삭제 */
+  top: 150px;
+}
+
+.top .logo {
+  width: 300px;
+  float: left;
+}
+
+.top .logo,
+.gnb {
+  margin-top: 40px;
+}
+
+.gnb {
+  float: right;
+}
+
+.delivery {
+  line-height: 40px;
+}
+.gnb ul li {
+  float: left;
+  margin-right: 40px;
+  font-size: 27px;
+}
+.title-heading {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  height: 300px;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.title-burger {
+  position: absolute;
+  height: 100%;
+  right: 80px;
+  bottom: 20px;
+  width: 600px;
+}
+
+.title-heading span {
+  color: var(--first-color);
+  display: block;
+}
+
+.title-heading span:nth-child(1) {
+  font-size: 20px;
+  border: 4px dotted var(--first-color);
+  text-align: center;
+}
+
+.title-heading span:nth-child(2) {
+  font-size: 120px;
+  font-family: 'burger';
+}
+
+.title-heading span:nth-child(3) {
+  font-size: 60px;
+  font-family: 'burger';
+}
+.fa {
+  font-size: 20px;
+}
+/* ######################## Container ######################### */
+#container {
+  width: 100%;
+  margin: auto;
+  height: auto;
+  margin-bottom: 150px;
+}
+
+#container::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+/* ##################### Section : today #################################### */
+section.today {
+  max-width: 1440px;
+  margin: auto;
+  height: auto;
+  margin-bottom: 150px;
+}
+
+.today-items {
+  height: 200px;
+  height: 100%;
+  margin-top: 60px;
+}
+
+.today-items:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+.today-item {
+  width: 46%;
+  float: left;
+  height: auto;
+}
+
+.today-item > div > a {
+  display: block;
+  height: 100%;
+}
+
+.today-item img {
+  width: 100%;
+}
+
+.today-item:first-child {
+  margin-left: 3%;
+}
+
+.today-item:last-child {
+  margin-right: 3%;
+  margin-left: 2%;
+}
+
+.fresh {
+  margin-top: 20px;
+}
+
+.always {
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  background-color: #FFC034;
+  text-align: center;
+  font-weight: bold;
+}
+
+.box {
+  display: none;
+}
+
+/* ########################## Section:enjoy ######################## */
+section.enjoy {
+  max-width: 1440px;
+  margin: auto;
+  height: auto;
+  margin-bottom: 150px;
+}
+
+.enjoy .inner {
+  margin: 40px;
+  height: 100%;
+  padding: 0;
+}
+
+.enjoy-heading {
+  text-align: center;
+}
+
+.enjoy-heading h1 {
+  font-size: 40px;
+  color: #3E1B07;
+  font-family: 'burger';
+  margin-bottom: 20px;
+}
+
+.enjoy-heading p {
+  color: rgb(133, 130, 130);
+}
+
+.enjoy-items {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.enjoy-item {
+  width: 33.3%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+
+.enjoy-item img {
+  width: 100%;
+  height: 400px;
+}
+.enjoy-item h3 {
+  text-align: center;
+  font-size: 22px;
+}
+.enjoy-item p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.btn {
+  display: block;
+  width: 126px;
+  height: 47px;
+  margin: auto;
+  line-height: 47px;
+  background: rgb(221, 24, 24);
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Nanum Gothic'sans-serif;
+}
+/* ############################### Section: upcoming ###################################### */
+section.upcoming {
+  max-width: 1440px;
+  margin: auto;
+  height: 500px;
+  border: 1px solid rgb(168, 165, 165);
+  position: relative;
+  box-shadow: 5px 20px 40px 5px rgb(168, 165, 165);
+  margin-bottom: 150px;
+}
+
+.event {
+  width: calc(100% - 70px);
+  height: calc(100% - 70px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+
+.event>div {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.event-text {
+  overflow: hidden;
+}
+
+.event-text .inner {
+  padding-right: 40px;
+}
+
+.event-text h2 {
+  color: rgb(112, 111, 111);
+}
+
+.event-text h1 {
+  font-size: 40px;
+  font-family: 'burger';
+  color: var(--first-color);
+  margin-bottom: 20px;
+}
+
+.event-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.event-text p {
+  color: rgb(133, 130, 130);
+}
+
+/* Slick.js Custom CSS */
+.event-text .slick-arrow {
+  display: none !important;
+}
+
+.event-text .slick-dots li button:before {
+  color: rgba(180, 177, 177, 0.336);
+  font-size: 50px;
+  opacity: 1;
+}
+
+.event-text .slick-dots li {
+  margin-bottom: 60px;
+  float: left;
+}
+
+.event-text .slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: var(--second-color);
+}
+
+/* ############################### Section : reservation ################  */
+section.reservation {
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  position: relative;
+  /*  */
+  background-image: url(images/bgicon1.png), url(images/bgicon2.png), url(images/bgicon3.png);
+  background-position: left 0, 18% 50%, right 100px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.reservation-heading {
+  height: 100px;
+  text-align: center;
+  font-family: 'burger';
+  margin-bottom: 50px;
+}
+
+.reservation-heading h2 {
+  font-size: 18px;
+}
+
+.reservation-heading h1 {
+  font-size: 40px;
+  color: var(--first-color);
+}
+
+.table-inner {
+  width: 50%;
+  margin: auto;
+  position: relative;
+}
+
+.table-inner input[type=text] {
+  width: 43%;
+  height: 60px;
+  padding-left: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid gray
+}
+
+.table-inner input[type=text]:nth-child(odd) {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.table-inner input[type=text]:nth-child(5) {
+  float: left
+}
+
+.find-btn {
+  display: block;
+  width: 47%;
+  height: 60px;
+  border-radius: 5px;
+  background-color: red;
+  color: #fff;
+  font-family: 'burger';
+  text-align: center;
+}
+
+/* ############################## footer ############################################# */
+#footer {
+  width: 100%;
+  background: url(images/footer.png) no-repeat;
+  background-size: 100% 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+#footer .inner {
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 80px);
+  height: calc(100% - 80px);
+  transform: translate(-50%, -50%);
+}
+
+#footer .inner>div {
+  float: left;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.inner-left h1 {
+  width: 400px;
+  margin-left: -20px;
+}
+
+.inner-left h1 img {
+  width: 400px;
+}
+
+.inner-left p {
+  width: 80%;
+  color: #fff;
+  line-height: 1.5em;
+}
+
+.left-icon {
+  color: #fff;
+  margin-right: 20x;
+  position: absolute;
+  bottom: 0;
+}
+
+.ficon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.ficon p {
+  color: #fff;
+  font-family: 'Nanum Gothic';
+  font-weight: 400;
+}
+
+.ficon p:first-child:before {
+  content: url(images/navi.png);
+  vertical-align: middle;
+}
+
+.ficon p:last-child:before {
+  content: url(images/m2.png);
+  vertical-align: middle;
+}
+
+.sns {
+  position: absolute;
+  width: 170px;
+  height: 50px;
+  bottom: 0;
+  right: 0;
+}
+
+.sns ul li {
+  float: left;
+  width: 38px;
+}
+.sns ul li a {
+  color: #fff;
+}
+
+
+
+.fa-copyright {
+  margin-right: 2px;
+}
+
+/* 햄버거버튼 */
+.menu-btn {
+  background: #fad27d;
+  position: fixed;
+  top: 0;
+  right: -270px;
+  width: 250px;
+  height: 100vh;
+  box-shadow: -5px 0 10px rgba(31, 30, 30, 0.164);
+  transition: 0.5s;
+}
+.menu-btn.active {
+  right: 0;
+}
+
+.menu {
+  line-height: 40px;
+  margin-top: 60px;
+}
+
+.menu a {
+  display: block;
+  text-align: right;
+  padding-right: 20px;
+  color: #000;
+  font-size: 22PX;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}

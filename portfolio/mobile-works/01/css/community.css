@@ -1,0 +1,53 @@
+main {
+  height: calc(100vh - 190px);
+}
+
+/* community */
+.community-inner {
+  margin: 0 25px;
+  padding-top: 30px;
+}
+.community-heading {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  font-size: 10px;
+  height: 42px;
+  border: 1px solid #F3F3F3;
+  padding: 0 10px;
+  margin-bottom: 30px;
+  background: #23D2E2;
+  color: #fff;
+  border-radius: 6px;
+}
+.community-heading h2 {}
+.community-heading a {
+  color: #fff;
+}
+
+.board-item {
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #F3F3F3;
+  padding: 0 10px;
+  margin-bottom: 5px;
+  background: #fff;
+  border-radius: 6px;
+}
+.board-item h5 {
+  font-size: 9.5px;
+  margin-bottom: 3px;
+}
+.board-item span {
+  font-size: 9.5px;
+  display: flex;
+  justify-content: space-between;
+}
+.board-item span:nth-child(2) {
+  color: #ddd;
+}
+.board-item span:nth-child(2) .fa {
+  margin-right: 5px;
+}

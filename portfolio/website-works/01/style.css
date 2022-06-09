@@ -1,0 +1,644 @@
+/* @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css); */
+/* FontAwesome CDN 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+/* ######################## reset.css ################# */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  min-width: 1200px;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ######################### layout#################################### */
+#visual {
+  height: 600px;
+  position: relative;
+}
+
+#container {
+  height: 850px;
+  position: relative;
+}
+
+/* ######################## Header ##################################### */
+header {
+  height: 160px;
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+.top {
+  height: 100px;
+}
+
+.top .inner {
+  width: 1200px;
+  height: 90px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.top .inner .lnb li {
+  width: 100px;
+  font-size: 14px;
+}
+
+.top .inner .lnb li:nth-child(1) {
+  width: 80px;
+  font-size: 14px;
+}
+
+.top h1.logo {
+  text-align: center;
+  height: 90px;
+  position: relative;
+  top: 15px;
+  width: 300px;
+}
+
+.lnb {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  overflow: hidden;
+}
+
+.lnb li {
+  float: left;
+}
+
+.lnb li a {
+  color: #666
+}
+
+.lnb li:after {
+  content: '|';
+  display: inline;
+  margin-left: 20px;
+}
+
+.lnb li.bar:after {
+  content: '|';
+  display: inline;
+  margin-left: 20px;
+}
+
+.lnb li.bar:after {
+  content: '';
+  display: inline;
+}
+
+.bottom {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 9999;
+
+  background-color: #0062b1
+}
+
+.bottom .inner {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  position: relative;
+  background-color: #0062b1
+}
+
+#gheader {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+#gheader > ul > li {
+  font-size: 19px;
+  float: left;
+  width: 20%;
+  line-height: 58px;
+  min-height: 58px;
+  position: relative;
+  text-align: center;
+}
+
+#gheader>ul>li:hover {
+  background-color: #006EBE
+}
+
+#gheader>ul>li a {
+  color: white;
+  font-weight: 400;
+}
+
+/* 작업한 페이지만 색상 레드로 체크 */
+#gheader>ul>li:nth-child(1)>a,
+#gheader>ul>li:nth-child(2)>a,
+#gheader>ul>li:nth-child(3)>a,
+#gheader>ul>li:nth-child(4)>a,
+.lnb li:nth-child(1)>a,
+.lnb li:nth-child(2)>a {
+  color: rgb(240, 38, 38);
+}
+
+#gheader>ul>li>ul>li a:hover {
+  text-decoration: underline;
+}
+
+#gheader ul:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+#gheader>ul>li .sub li {
+  font-size: 16px;
+}
+
+#gheader>ul>li .sub li:hover {
+  background-color: #006EBE
+}
+
+#gheader>ul>li .sub {
+  height: 290px;
+}
+
+#gheader>ul>li:hover .sub {
+  height: 290px;
+}
+
+.sub {
+  display: none;
+}
+
+/* ######################## Viusal ##################################### */
+#visual .banner {
+  width: 100%;
+  height: 598px;
+  overflow: hidden;
+  position: absolute;
+  top: 0
+}
+
+.bxslider img {
+  width: 100%;
+  height: 598px;
+}
+
+/* container */
+.content1 {
+  width: 1200px;
+  height: 130px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 200;
+  top: -65px;
+  overflow: hidden;
+}
+
+.leftclick,
+.rightclick {
+  width: 600px;
+  height: 130px;
+  font: normal 30px 'Adobe 고딕 Std';
+  letter-spacing: 1px;
+}
+
+.leftclick {
+  float: left;
+  background: url(images/취업성공패키지란.png)no-repeat;
+}
+
+.rightclick {
+  float: left;
+  background: url(images/참여신청.png)no-repeat;
+}
+
+.leftclick a,
+.rightclick a {
+  padding-left: 50px;
+  width: 600px;
+  height: 100%;
+  line-height: 130px;
+  display: block;
+  color: #Eee
+}
+
+.content2 {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 330px;
+  overflow: hidden;
+}
+
+.rcontent3 {
+  width: 100%;
+  height: 350px;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+.content3 {
+  width: 1200px;
+  margin: 0 auto;
+  height: 300px;
+  padding: 30px
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  margin: auto;
+  width: 654px;
+}
+
+.left ul.tabs {
+  overflow: hidden;
+}
+.left ul.tabs li {
+  float: left;
+  margin: 0;
+  margin-left: 10px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.left ul.tabs li.current {
+  color: #222;
+  border-bottom: 4px solid #0062b1;
+}
+
+.left ul.tabs li.current:hover {
+  color: #0062b1;
+}
+
+.left .tab-content {
+  float: left;
+  display: none;
+  margin-top: 5px;
+  border: 2px solid #aaa;
+  width: 630px;
+  height: 200px;
+  padding: 10px 10px;
+  text-align: center
+}
+
+.left .tab-content ul li {
+  float: left;
+  width: 630px;
+  padding: 8px 0;
+  overflow: hidden;
+}
+
+.left .tab-content ul li a {
+  float: left;
+  left: 5px;
+  font-size: 16px;
+  color: black
+}
+
+.left .tab-content ul li a:hover {
+  color: black;
+}
+
+.left .tab-content ul li span {
+  float: right;
+  right: 0px;
+  font-size: 16px
+}
+
+.left .tab-content.current {
+  display: block
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+  width: 506px;
+  position: absolute;
+  right: 10px
+}
+
+.right h3 {
+  padding: 8px;
+  font-size: 19px;
+}
+
+.right h3:after {
+  content: '';
+  display: block;
+  height: 4px;
+}
+
+.right .board {
+  margin-top: 5px;
+  border: 2px solid #aaa;
+  height: 200px;
+  padding: 10px 10px;
+}
+
+.right .board li {
+  font-size: 16px;
+  padding: 8px 0;
+  width: 486px;
+}
+
+.right .board li a {
+  font-size: 16px;
+  padding: 8px 0;
+  color: black;
+}
+
+.right .board li a:hover {
+  color: black;
+}
+
+.right .board li span {
+  float: right;
+}
+
+.con4 {
+  float: left;
+  width: 455px;
+  height: 300px;
+  margin-left: 0px;
+  margin-left: 10px;
+}
+
+.con4 h3 {
+  padding: 8px;
+  font-size: 19px;
+}
+
+h3:after {
+  content: '';
+  display: block;
+  height: 4px;
+}
+
+.con4 .con4_1 {
+  padding: 10px 10px;
+  border: 1px solid black;
+  width: 430px;
+  height: 220px;
+  background-color: white;
+}
+.con4 ul {
+  overflow: hidden;
+}
+.con4 ul li {
+  float: left;
+  width: 51px;
+  height: 51px;
+  margin: 10px 10px;
+  background-color: #ebf8fb;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 100%;
+}
+
+.con4 ul li a {
+  line-height: 50px;
+  color: black
+}
+
+.con5 {
+  float: left;
+  width: 182px;
+  height: 300px;
+  margin-left: 20px;
+}
+
+.con5 h3 {
+  padding: 8px;
+  font-size: 19px;
+}
+
+.con5_1 {
+  width: 158px;
+  height: 220px;
+  border: 1px solid black;
+  padding: 10px 10px;
+  background-color: white;
+}
+
+.con5_1 p {
+  text-align: center;
+  color: #cfd1d5;
+  font-weight: bold;
+}
+
+.con5_1 p.first {
+  margin-top: 25.5px;
+}
+
+.con5_1 p.second {
+  color: black;
+}
+
+.con6 {
+  float: left;
+  margin-left: 20px;
+  width: 473px;
+  height: 300px;
+  position: relative;
+  cursor: pointer;
+}
+
+.cardnews {
+  width: 500px;
+  height: 240px;
+  overflow: hidden;
+}
+
+.con6 img {
+  width: 100%;
+  height: 240px;
+}
+
+/* ######################## Footer ##################################### */
+#footer {
+  width: 100%;
+  height: 180px;
+  background-color: #444;
+  padding: 30px 0;
+}
+
+#footer .inner {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  overflow: hidden;
+}
+
+.inner .box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+  width: 188px;
+  float: left
+}
+
+.box2,
+.box3,
+.box4,
+.box5 {
+  margin-left: 50px;
+}
+
+.inner .ftitle {
+  font-size: 25px;
+  text-align: center;
+  color: #eee;
+  font-weight: bold;
+  padding-bottom: 20px;
+  margin-top: -6px;
+}
+
+.inner .box1 .flogo {
+  display: block;
+  width: 188px;
+  margin-left: -20px;
+  margin-top: -15px;
+  margin-left: 10px;
+}
+
+.inner .box1 .flogo img {
+  width: 100%;
+}
+
+.box1 {
+  margin-left: 10px;
+}
+
+.box2 p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.box2 p.indent {
+  margin-bottom: 20px;
+}
+.inner .box3 ul {
+  overflow: hidden;
+}
+.inner .box3 ul li {
+  float: left;
+  padding-left: 6px
+}
+
+.inner .box3 ul li:first-child {
+  padding-left: 0px;
+}
+
+.inner .box4 a {
+  color: #eee;
+  margin-top: 15px;
+  text-align: center;
+  display: block;
+}
+
+.inner .box4 a:first-child {
+  margin-top: 0;
+}
+
+.inner .box4 a {
+  color: #fff;
+}
+
+.inner .box4 a:nth-child(3) {
+  color: #ff7;
+}
+
+.inner .box5 select {
+  margin-left: 35px;
+  padding: 10px 80px 10px 10px;
+  background-color: rgb(61, 60, 60);
+  color: #eee;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+option[class=color] {
+  background-color: white;
+  color: rgb(61, 60, 60);
+}
+
+/* more button */
+.left,
+.board,
+.con4,
+.con5,
+.con6 {
+  position: relative;
+}
+
+.more {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  font-weight: bold;
+  border: 1px solid rgb(129, 126, 126);
+  border-radius: 10px;
+  padding: 3px 5px;
+}
+
+.left .more {
+  top: 10px;
+  right: 0;
+}
+
+.board .more {
+  top: -40px;
+}
+
+.con6 .more {
+  right: -20px;
+}
+
+.con6 h3 {
+  padding: 8px;
+  font-size: 19px;
+}
+
+.more {
+  color: #000;
+  vertical-align: middle;
+}
+
+.xi-plus {
+  color: #000;
+  font-size: 16px;
+  line-height: 16px;
+  margin-left: 7px;
+}
