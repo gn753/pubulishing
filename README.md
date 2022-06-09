@@ -12,5 +12,5 @@
 - HTML, CSS,Jquery.
 
 ## 실행방법
-
+https://github.com/gn753/pubulishing.git
 해당 링크를 통해 포트폴리오를 확인할 수 있습니다.
